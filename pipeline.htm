@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 
+    Code sample for CSCI 2408 Computer Graphics Fall 2022 
+    (c)2022 by Araz Yusubov 
+    DISCLAIMER: All code examples we will look at are quick hacks intended to present working prototypes.
+    Hence they do not follow best practice of programming or software engineering.
+-->
+<html>
+    <head>
+        <title>Week 06 - Reading object model files</title>       
+        <script type="text/javascript" src="pipeline.js"></script>
+    </head>
+    <body style="background-color: #888888;">
+        <center>
+            <div style="float: none; height: 20pt; font-family: Cambria;">
+                <label for="file-open">Choose a file to open</label>
+                <!-- <input id="file-open" type="file" accept="image/*"/> -->
+                <input id="file-open" type="file" accept=".obj"/>
+            </div>
+            <div style="float: none; height: 20pt; font-family: Cambria;">
+                <label for="painter-toggle">Switch painter algorithm on/off</label>
+                <input id="painter-toggle" type="checkbox"/>
+            </div>
+            <div style="float: none; height: 20pt; font-family: Cambria;">
+                Press +/- for scaling up/dow and up/down or right/left to rotate around x- or y-axis.
+            </div>
+            <div style="float: none; height: 20pt; font-family: Cambria;">
+                <label for="proc-button">Start processing</label>
+                <button id="proc-button" type="button">Process the image</button>
+            </div>
+            <br>
+            <canvas id="gl-canvas" width="800" height="600">
+            Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>
+        </center>
+    </body>
+</html>
